@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="admin_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+   
+    </asp:ContentPlaceHolder>
+   
+</head>
+ 
+<body>
+    <!DOCTYPE html>  
+<html>  
+<head>  
+    <title>my layout</title>  
+    <link rel="stylesheet" type="text/css" href="Admin.css">  
+</head>  
+<body>
+ <form id="form1" runat="server">   
+<header id="header">  
+<h1>TOP BEAUTY</h1>
+  
+</header>  
+<nav id="nav">  
+    <ul>  
+        <li><a href="man_user.aspx">User</a></li> 
+        <li><a href="man_cat.aspx">Category</a></li>
+        <li><a href="man_hc.aspx">Haircare</a></li> 
+        <li><a href="man_sc.aspx">Skincare</a></li>
+        <li><a href="man_mk.aspx">Makeup</a></li>
+        <li><a href="man_prod.aspx">Product</a></li>
+        <li><a href="man_fb.aspx">Feedback</a></li>
+        <li><a href="logout.aspx">Log Out</a></li>
+        <%--<li><asp:HyperLink ID="HyperLink1" runat="server">Logout</asp:HyperLink></li> --%> 
+       
+    </ul>  
+</nav>  
+<aside id="side">  
+    
+</aside>  
+  
+  
+    <div id="con">  
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">  
+     
+        </asp:ContentPlaceHolder>  
+    </div>  
+  
+  
+<div id="footer">  
+    Created by:jinal chotaliya,janvi chotaliya,hitaxi sabhadiya 
+</div>  
+</body>  
+</html>  
+    
+      
+    </form>  
+    
+    
+</body>
+</html>
